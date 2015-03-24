@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.josue.square"
+    android:versionCode="6"
+    android:versionName="1.5" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    
+    <supports-screens
+    	 android:largeScreens="true"
+          android:normalScreens="true"
+          android:smallScreens="true"
+          android:anyDensity="true"
+          />
+    
+    <permission android:name="com.josue.square.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+	<uses-permission android:name="android.permission.ACCESS_COARCE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon">
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAWY7PwDAZB5p7y4_JC6-hhYur2qhDrpOc" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        
+        <meta-data android:name="com.google.android.gms.version"
+        	android:value="@integer/google_play_services_version" />
+        
+        <activity android:screenOrientation="portrait" android:label="@string/app_name" android:name="com.josue.square.splash" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+    	</intent-filter>
+        </activity>
+        <activity android:screenOrientation="portrait" android:name="com.josue.square.map" android:theme="@android:style/Theme.Light.NoTitleBar" android:launchMode="standard"/>
+           
+    </application>
+
+</manifest>

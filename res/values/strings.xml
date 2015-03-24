@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">4Square</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="clear">Clear</string>
+    <string name="packagename">com.josue.square</string>
+    <string name="exceptiontitle">Invalid server response</string>
+    <string name="exceptionmessage">Please try again later.\nIf the problem persists, contact us at %s.</string>
+    <string name="connectotinternet">Please make sure you are connected to the internet.</string>
+    <string name="supportEmail">torres.josue@yahoo.com</string>
+    <string name="exceptionbuttontext">OK</string>
+    <string name="couldnotconnecttoserver">Could not connect to server</string>
+</resources>
