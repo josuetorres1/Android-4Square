@@ -1,2 +1,2 @@
 # Android-4Square
-Four Square Api for Android Example Illustration (See map.jpg)
+Four Square Api for Android Illustration (See map.jpg)
